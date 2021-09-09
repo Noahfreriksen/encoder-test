@@ -9,19 +9,19 @@ HairlessMIDI_Interface midi;
 // potentiometers connected to the eight input pins of
 // the multiplexer
 CCPotentiometer volumePotentiometers[] {
-  {A0, 0x10},
-  {A1, 0x11},
-  {A2, 0x12},
-  {A3, 0x13},
-  {A4, 0x14},
-  {A5, 0x15},
+  {A0, {0x10, CHANNEL_4}},
+  {A1, {0x11, CHANNEL_4}},
+  {A2, {0x12, CHANNEL_4}},
+  {A3, {0x13, CHANNEL_4}},
+  {A4, {0x14, CHANNEL_4}},
+  {A5, {0x15, CHANNEL_4}},
 };
 
 NoteButton randomizeButtons[] {
-  {7, 0x16},
-  {6, 0x17},
-  {5, 0x18},
-  {4, 0x19},
+  {7, {0x16, CHANNEL_4}},
+  {6, {0x17, CHANNEL_4}},
+  {5, {0x18, CHANNEL_4}},
+  {4, {0x19, CHANNEL_4}},
 };
  
 // Initialize the Control Surface
